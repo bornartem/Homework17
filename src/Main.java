@@ -17,5 +17,6 @@ public class Main {
                 station.service(null, car2, null);
                 station.service(null, null, truck);
                 station.service(null, null, truck2);
+                //!
             }
         }

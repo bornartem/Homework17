@@ -8,5 +8,6 @@ public abstract class Engine extends Wheel {
     public void checkTrailer() {
         System.out.println("Проверяем прицеп");
     }
+    //!//!
 }
 
