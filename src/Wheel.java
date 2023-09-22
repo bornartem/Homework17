@@ -1,6 +1,6 @@
-public abstract class Wheel  implements Service {
-private String modelName;
-private int wheelsCount;
+public abstract class Wheel implements Checkable {
+    public String modelName;
+    public int wheelsCount;
 
     public Wheel(String modelName, int wheelsCount) {
         this.modelName = modelName;
@@ -11,20 +11,16 @@ private int wheelsCount;
         return modelName;
     }
 
-    public void setModelName(String modelName) {
-        this.modelName = modelName;
-    }
-    //!
-
     public int getWheelsCount() {
         return wheelsCount;
     }
 
-    public void setWheelsCount(int wheelsCount) {
-        this.wheelsCount = wheelsCount;
-    }
     public void updateTyre() {
         System.out.println("Меняем покрышку");
     }
 
+    @Override
+    public void check() {
+
+    }
 }
